@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-on-surface": "#f8efed",
+              "surface-container": "#f5ecea",
+              "on-secondary-fixed-variant": "#4a4643",
+              "surface-container-high": "#efe6e4",
+              "on-tertiary-fixed-variant": "#653e00",
+              "error": "#ba1a1a",
+              "primary-container": "#b15f00",
+              "tertiary": "#825100",
+              "surface-variant": "#e9e1df",
+              "surface-dim": "#e1d8d6",
+              "surface-bright": "#fff8f6",
+              "tertiary-fixed-dim": "#ffb95f",
+              "secondary": "#625d5b",
+              "on-background": "#1e1b1a",
+              "on-primary-container": "#fffbff",
+              "background": "#fff8f6",
+              "surface-container-highest": "#e9e1df",
+              "primary": "#8d4b00",
+              "primary-fixed-dim": "#ffb77d",
+              "on-surface-variant": "#554336",
+              "on-primary": "#ffffff",
+              "tertiary-container": "#a36700",
+              "surface-container-lowest": "#ffffff",
+              "surface-container-low": "#fbf2f0",
+              "inverse-primary": "#ffb77d",
+              "on-error-container": "#93000a",
+              "on-tertiary": "#ffffff",
+              "surface": "#fff8f6",
+              "tertiary-fixed": "#ffddb8",
+              "on-secondary-container": "#686361",
+              "primary-fixed": "#ffdcc3",
+              "outline": "#887364",
+              "on-primary-fixed-variant": "#6e3900",
+              "outline-variant": "#dbc2b0",
+              "on-surface": "#1e1b1a",
+              "error-container": "#ffdad6",
+              "on-primary-fixed": "#2f1500",
+              "surface-tint": "#904d00",
+              "on-error": "#ffffff",
+              "on-secondary-fixed": "#1e1b19",
+              "inverse-surface": "#342f2e",
+              "secondary-fixed-dim": "#ccc5c2",
+              "secondary-container": "#e9e1dd",
+              "on-secondary": "#ffffff",
+              "on-tertiary-container": "#fffbff",
+              "secondary-fixed": "#e9e1dd",
+              "on-tertiary-fixed": "#2a1700"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .primary-gradient {
+            background: linear-gradient(135deg, #8d4b00 0%, #b15f00 100%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body antialiased" style="overflow-x:hidden" style="overflow-x:hidden">
+<!-- TopNavBar Component -->
+<nav class="fixed top-0 z-50 w-full bg-[#fff8f6] dark:bg-stone-900 border-none">
+<div class="flex justify-between items-center w-full px-8 py-6 max-w-[1440px] mx-auto">
+<div class="text-2xl font-black tracking-tighter text-stone-900 dark:text-stone-100 uppercase font-headline">
+                N Malley Construction Inc.
+            </div>
+<div class="hidden md:flex items-center gap-12">
+<a class="font-headline font-bold tracking-tight uppercase text-sm text-[#8d4b00] border-b-2 border-[#8d4b00] pb-1" href="/">Home</a>
+<a class="font-headline font-bold tracking-tight uppercase text-sm text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors duration-300" href="/services/">Services</a>
+<a class="font-headline font-bold tracking-tight uppercase text-sm text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors duration-300" href="/about/">About</a>
+<a class="font-headline font-bold tracking-tight uppercase text-sm text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors duration-300" href="#">Portfolio</a>
+</div>
+<button class="primary-gradient text-on-primary font-headline font-bold tracking-tight uppercase text-sm px-8 py-3 transition-all active:opacity-80 active:scale-[0.99] hover:translate-y-[-2px]">
+                Get a Quote
+            </button>
+</div>
+<div class="bg-stone-100 dark:bg-stone-800 h-[1px] w-full"></div>
+</nav>
+<main class="pt-[88px]">
+<!-- Hero Section -->
+<section class="relative h-[921px] flex items-center overflow-hidden bg-on-background">
+<div class="absolute inset-0 z-0">
+<img alt="Construction Site" class="w-full h-full object-cover opacity-60" data-alt="wide angle shot of a massive modern construction site with heavy steel cranes and concrete framework against a dramatic sunset sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQmp1TzL6wg1AdHmDdy63vtIT8BQEMDdQFkP3fb-VKwZarD_z47u2WbXdXv8Fa87y2c50iVNj6SVvztTXvUl0oc9bo5Ytck4ksCvTbg7_aQWTXwcCqRqXPSO85PkUKp2SZhZI09nzNf4eezBkBmBlCHjH-M2rCGYAOWO38qOKM77Zp8qn5J64H2HWsrGRi0ySHmefsyOJesmeMzF63XqkxBKcJc9Kf336dswVkJ9ENd8oTa10XSqVZx_miY982-UJKqgDgcnHGXvk"/>
+</div>
+<div class="relative z-10 max-w-[1440px] mx-auto px-8 w-full">
+<div class="max-w-4xl">
+<span class="inline-block text-primary-fixed-dim font-label text-sm uppercase tracking-[0.2em] mb-4">Established Excellence</span>
+<h1 class="text-white font-headline text-5xl md:text-7xl font-extrabold tracking-tighter leading-tight mb-8">
+                        Architectural Precision.<br/>Structural Integrity.
+                    </h1>
+<p class="text-surface-variant font-body text-xl max-w-2xl mb-12 leading-relaxed">
+                        Setting the gold standard in general construction. From complex industrial developments to luxury residential builds, we construct landmarks that endure.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-6">
+<button class="primary-gradient text-on-primary font-headline font-bold tracking-tight uppercase text-base px-10 py-5 hover:translate-y-[-2px] transition-transform">
+                            Start Your Project
+                        </button>
+<button class="border border-outline-variant text-white font-headline font-bold tracking-tight uppercase text-base px-10 py-5 hover:bg-white/10 transition-colors">
+                            View Portfolio
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-24 bg-surface">
+<div class="max-w-[1440px] mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+<div class="max-w-2xl">
+<span class="text-primary font-label text-xs uppercase tracking-[0.2em] mb-4 block">Our Capabilities</span>
+<h2 class="text-on-background font-headline text-4xl md:text-5xl font-extrabold tracking-tight">Constructing with Uncompromising Standards</h2>
+</div>
+<p class="text-secondary max-w-md text-lg leading-relaxed">
+                        Every project is a testament to our commitment to engineering excellence and material mastery.
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0">
+<!-- Card 1 -->
+<div class="group relative aspect-[4/5] overflow-hidden bg-surface-container-highest">
+<img alt="Commercial Build-outs" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Modern glass skyscraper interior with industrial concrete pillars and high-end minimalist finishing" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPZvKC06FtTAi4-Ar4ofIVL8la7bsCNYU1k01ENP40nBS8MZfVxVeIoa3fTFMVGeE_AOSdwfPeEbdRww1FAhsHcibxEKe_0Vxd0jJwYW6mlkSAnIj0C3qpFMZ7nBV91cId3-mbK4JiFyzZ0rHxFtoxxRjNV-b42nMRj03qdD0ZaqQRdk_QUvnuBblP9dVpGAeGKEbQcXjpKwVT1MTVqyQbTu7q9WeITBjV_svEG_8tWr_u07g0gXuSww_7YNNqQ7xrXNpUKlq2omg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-stone-900/90 via-stone-900/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full">
+<span class="text-primary-fixed-dim font-headline text-3xl font-black mb-2 block opacity-50">01</span>
+<h3 class="text-white font-headline text-xl font-bold uppercase tracking-tight">Commercial Build-outs</h3>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group relative aspect-[4/5] overflow-hidden bg-surface-container-high">
+<img alt="Residential Construction" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Contemporary luxury villa with clean architectural lines, floor-to-ceiling windows, and premium cedar wood accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyBZvdw_xINRw5tXDI13W2twzw626kaSTpO6sRnQ76JOLIS1zXFk3KArq0FepzP1BxthtvN-tFxyoNtwoiMJdUS06mKzKtu60IvaqjOc2w7ydWjUVeTNkxxecBG8f_H2j2hYBz_m0FchFN_x0-Q-lD04dm812YXqiUaExUbTfWmxbs_F2RVKYmb07GNrJQ7J7Dk1DgCQFUa3244xgQQHxIYFQAfsWVYEmXyVZGVbH2J8BYBTCLhmQ12hCx4jo1FaEbrmuWkQODrfc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-stone-900/90 via-stone-900/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full">
+<span class="text-primary-fixed-dim font-headline text-3xl font-black mb-2 block opacity-50">02</span>
+<h3 class="text-white font-headline text-xl font-bold uppercase tracking-tight">Residential Construction</h3>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group relative aspect-[4/5] overflow-hidden bg-surface-container-highest">
+<img alt="Project Management" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Overhead view of architectural blueprints and high-end construction materials on a stone table with a hard hat" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBv2mhg8KA5hduGHYGOYODehkaqlIl9_UnJlm5wnaulPOLsZjt_vIBpSFnt1C5LHVYlLbN6i_Cba0JyoQbTypSYFGvHCSvX6FsNRkNGdi5hLuRMb8-cajwjG1FVmY-4cjwd1dSlwkm_UBtOubiMoYJa7KmUJzY7EE1OmYkz8ELX-_asaMgXvEcreo-KGcBlT34MXQXC4CvmV-D8Dk_id-wJvOGsclgFmRlIv9lhz5X7gU_Ht78nervv_TkC3iXC4IzDb12PlNJlfpU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-stone-900/90 via-stone-900/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full">
+<span class="text-primary-fixed-dim font-headline text-3xl font-black mb-2 block opacity-50">03</span>
+<h3 class="text-white font-headline text-xl font-bold uppercase tracking-tight">Project Management</h3>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="group relative aspect-[4/5] overflow-hidden bg-surface-container-high">
+<img alt="Industrial Development" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Symmetrical industrial warehouse structure with exposed steel beams and polished concrete flooring in natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAukTk7newVT66utaO_lM9vooYoxsomumSrPEIsgpv7qkdIzYqfh3DcGAlDsBrt3Tq4RLrGZHSrx9sdxxJNCpaM2UE-OORZbIWJom4eQFhXj-_72QGZd08Dv3J7keUDH_w8NzagHAjiyLGz-ut2Gz_VnrzVngzh-__V0XdfWv_INw5_HAMZCOKWJkrQi2wXMuehl2shZ_0U5I0ePYWDakVhJrsCqMlXmBXa6ihgaBEzxotnpdM2mCxlqYgRj_pW0Usum2tPuiWL4cI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-stone-900/90 via-stone-900/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full">
+<span class="text-primary-fixed-dim font-headline text-3xl font-black mb-2 block opacity-50">04</span>
+<h3 class="text-white font-headline text-xl font-bold uppercase tracking-tight">Industrial Development</h3>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Project Highlights: Bento Grid -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-[1440px] mx-auto px-8">
+<div class="mb-16">
+<span class="text-primary font-label text-xs uppercase tracking-[0.2em] mb-4 block">Portfolio</span>
+<h2 class="text-on-background font-headline text-4xl md:text-5xl font-extrabold tracking-tight">Project Highlights</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 grid-rows-2 gap-4 h-[1200px] md:h-[800px]">
+<div class="md:col-span-8 md:row-span-2 relative group overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Brutalist architecture building with sharp geometric shapes and high contrast light and shadow on concrete facade" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqrlUM6fKmO78b4qCnKDDpsursEYgEa-fWCp1EIDz4Cev5YCjQnmz1YetcrzdW9GfHnONsuWLVdoJxfb3xiaiPweHGTOYaKbuw3vlLxUtBsoVSRRAIQ847wFtVaf8jcb__61DqglNxfvYdb95zi3vaXl6O-5G01j8akKamnJRal7khpmMnmVAgkC9diGffLPuGYrWDsCCCWEPzMxkeW1ODuiejFxpf_2r7xoo6N4HSK-HgeAxOB5m2tMnH-xmZx2iC4i8Aobq_04c"/>
+<div class="absolute inset-0 bg-stone-900/20 group-hover:bg-stone-900/40 transition-colors"></div>
+<div class="absolute bottom-12 left-12 p-8 bg-white max-w-xs">
+<h4 class="text-on-background font-headline text-lg font-bold uppercase">The Meridian Center</h4>
+<p class="text-secondary text-sm mt-2">Commercial Headquarters - 2023</p>
+</div>
+</div>
+<div class="md:col-span-4 md:row-span-1 relative group overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Stunning luxury estate with infinity pool at dusk reflecting modern architecture and warm interior lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBivcN1KMSWct0n7j-gba-M86bv3rHzDZi_tJhhdzWfetT64QEPx8l1mDvv_ElXFWX0u17PIxmhe99q-0-gCLCExK6Id0aJVx146nHGRjOvR5CUfSHjQaZplh6HCOmK0u9Rig2_tNYcHIBOA5jN6AfVuAckoljIgy5sWKVL5QC48iAeATKbG7C1kQ_Xu_Oq9VQ9a5zzr7f7j6zHU0fRYGmqzdYITrOQPyQpNjmFWGeqrSWOtyQssNDwBIJCuAKQcFv3nFyIo7SVlFs"/>
+<div class="absolute inset-0 bg-stone-900/10 group-hover:bg-stone-900/30 transition-colors"></div>
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="bg-white px-6 py-3 font-headline font-bold text-xs uppercase tracking-widest">View Project</span>
+</div>
+</div>
+<div class="md:col-span-4 md:row-span-1 relative group overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Close up detail of architectural wood cladding and glass panels on a modern minimalist residence" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0P5KhQUS64nbi1Wk-tQye2QDbip44ahNOb5TgYuVWbmgz0gk7EK8CLJupf23-rDDB8ZJ8djj60livMw-kb80U6y8H-cCfVfjLuqkwkk_BvAOi8oXL7T1VthMeUTTAipqXib0n1-bqqQe2pqDhB3SgbaQMW1CDtmVLD7SQYaf3eHcn7ubfIfySo3LMSSSFcFeYYBnCiXW50F-VbvRYMKi8FTHDEKoEYGZBJ--7XSrj17DMYn1x9pLweAhIVEp5iHq9tRtxL6oiUtI"/>
+<div class="absolute inset-0 bg-stone-900/10 group-hover:bg-stone-900/30 transition-colors"></div>
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="bg-white px-6 py-3 font-headline font-bold text-xs uppercase tracking-widest">View Project</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-32 bg-white overflow-hidden">
+<div class="max-w-[1440px] mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+<div class="relative">
+<div class="absolute -top-12 -left-12 w-64 h-64 bg-surface-container-high z-0"></div>
+<img alt="Modern Building Detail" class="relative z-10 w-full h-auto grayscale hover:grayscale-0 transition-all duration-700" data-alt="Abstract architectural photography focusing on the sharp geometric corners of a white minimalist building against a clear blue sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxZgzh5LaIGn_O3AT8SHrbsuAf542BajmK40PzBlYRh6Za11pwVNDEKv9wqnHyiByxBF0J50uEe3BIajfMSZoQmiouEnsZXPg8_QWudqDrB30_qxtW1v4nwxkyFz0Uusd8AxTtR15OpXCxBpwjGuTcfsklBRvz2EWlyX4kfF5U21pf23EyXL66VY8D4kLFpFU52LPDo2UZBiclvKAH-xaYJSnNrVZ4oYNbb5nrJ23Mfeej-McNPi6VkoztMPdz68UCDyTBVohX3dw"/>
+<div class="absolute -bottom-8 -right-8 primary-gradient p-12 hidden lg:block">
+<span class="block text-4xl font-headline font-black text-white">25+</span>
+<span class="text-white/80 text-xs uppercase tracking-[0.2em]">Years of Craft</span>
+</div>
+</div>
+<div>
+<span class="text-primary font-label text-xs uppercase tracking-[0.2em] mb-6 block">Our Legacy</span>
+<h2 class="text-on-background font-headline text-4xl md:text-5xl font-extrabold tracking-tight mb-8">Crafting the Future of the Built Environment</h2>
+<p class="text-secondary text-lg leading-relaxed mb-8">
+                        Founded on the principles of reliability and technical mastery, N Malley Construction Inc. has grown from a local contractor to a regional leader in high-end construction. We don't just build structures; we build enduring relationships through transparency and precision.
+                    </p>
+<p class="text-secondary text-lg leading-relaxed mb-12">
+                        Our commitment to quality is evident in every joint, every pour, and every finished surface. We treat every project as a digital monument to our client's vision and our own craftsmanship.
+                    </p>
+<div class="space-y-6">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-headline font-bold uppercase text-sm tracking-tight text-on-background">Licensed &amp; Bonded Professionals</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-headline font-bold uppercase text-sm tracking-tight text-on-background">Sustainable Material Sourcing</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-headline font-bold uppercase text-sm tracking-tight text-on-background">Zero-Accident Safety Record</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- High-Contrast CTA -->
+<section class="bg-primary-container relative py-20 overflow-hidden">
+<div class="absolute right-0 top-0 h-full w-1/3 opacity-10">
+<span class="text-[20rem] font-headline font-black leading-none -tracking-[0.1em] text-white select-none">NM</span>
+</div>
+<div class="max-w-[1440px] mx-auto px-8 relative z-10 flex flex-col md:flex-row items-center justify-between gap-12">
+<div class="max-w-2xl text-center md:text-left">
+<h2 class="text-white font-headline text-4xl md:text-5xl font-extrabold tracking-tight mb-4">Ready to build your legacy?</h2>
+<p class="text-white/80 text-xl font-body">Consult with our lead architects and engineers today for a custom project plan.</p>
+</div>
+<button class="bg-white text-primary font-headline font-bold tracking-tight uppercase text-lg px-12 py-6 hover:translate-y-[-4px] hover:shadow-2xl transition-all">
+                    Get a Free Consultation
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer Component -->
+<footer class="bg-stone-900 dark:bg-black border-none">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 py-16 max-w-[1440px] mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="text-xl font-bold text-white uppercase tracking-widest mb-8">N Malley Construction Inc.</div>
+<p class="font-['Inter'] text-stone-400 text-sm leading-relaxed mb-6">
+                    Master builders specializing in architectural precision and high-performance structural development since 1999.
+                </p>
+<div class="flex gap-4">
+<a class="text-stone-500 hover:text-white transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="text-stone-500 hover:text-white transition-colors" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
+<a class="text-stone-500 hover:text-white transition-colors" href="#"><span class="material-symbols-outlined">call</span></a>
+</div>
+</div>
+<div>
+<h4 class="text-white font-headline font-bold uppercase text-xs tracking-[0.2em] mb-8">Services</h4>
+<ul class="space-y-4">
+<li><a class="text-stone-500 hover:text-[#b15f00] font-['Inter'] text-sm transition-all hover:translate-x-1 inline-block" href="#">Commercial Build-outs</a></li>
+<li><a class="text-stone-500 hover:text-[#b15f00] font-['Inter'] text-sm transition-all hover:translate-x-1 inline-block" href="#">Residential Projects</a></li>
+<li><a class="text-stone-500 hover:text-[#b15f00] font-['Inter'] text-sm transition-all hover:translate-x-1 inline-block" href="#">Site Management</a></li>
+<li><a class="text-stone-500 hover:text-[#b15f00] font-['Inter'] text-sm transition-all hover:translate-x-1 inline-block" href="#">Industrial Development</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-headline font-bold uppercase text-xs tracking-[0.2em] mb-8">Company</h4>
+<ul class="space-y-4">
+<li><a class="text-stone-500 hover:text-[#b15f00] font-['Inter'] text-sm transition-all hover:translate-x-1 inline-block" href="/about/">About Us</a></li>
+<li><a class="text-stone-500 hover:text-[#b15f00] font-['Inter'] text-sm transition-all hover:translate-x-1 inline-block" href="#">Our Process</a></li>
+<li><a class="text-stone-500 hover:text-[#b15f00] font-['Inter'] text-sm transition-all hover:translate-x-1 inline-block" href="#">Careers</a></li>
+<li><a class="text-stone-500 hover:text-[#b15f00] font-['Inter'] text-sm transition-all hover:translate-x-1 inline-block" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-headline font-bold uppercase text-xs tracking-[0.2em] mb-8">Contact</h4>
+<address class="not-italic text-stone-400 font-['Inter'] text-sm leading-loose">
+                    1200 Industrial Way<br/>
+                    Suite 400<br/>
+                    San Francisco, CA 94105<br/>
+<span class="text-white">office@nmalley.com</span>
+</address>
+</div>
+</div>
+<div class="bg-stone-800 h-[1px] w-full"></div>
+<div class="max-w-[1440px] mx-auto px-8 py-8 flex flex-col md:flex-row justify-between items-center gap-4">
+<span class="font-['Inter'] text-stone-500 text-xs">© 2024 N Malley Construction Inc. All Rights Reserved.</span>
+<div class="flex gap-8">
+<a class="text-stone-500 hover:text-[#b15f00] text-xs uppercase tracking-widest font-bold" href="#">Terms of Service</a>
+<a class="text-stone-500 hover:text-[#b15f00] text-xs uppercase tracking-widest font-bold" href="#">Sitemap</a>
+</div>
+</div>
+</footer>
+</body></html>
